@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f4f6f8;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 🔍 SEARCH BAR */
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* STATUS COLORS */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.applied {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.interview {
+    background-color: yellow;
+}
+
+.rejected {
+    background-color: red;
+    color: white;
+}
+
+.offer {
+    background-color: green;
+    color: white;
+}
+
+#interviewDiv {
+    margin-top: 10px;
+}

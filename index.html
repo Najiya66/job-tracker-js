@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📋 Job Tracker</h1>
+
+<!-- 🔍 SEARCH BAR -->
+<input type="text" id="search" placeholder="Search jobs..." onkeyup="displayJobs()">
+
+<div class="form">
+    <input type="text" id="company" placeholder="Company">
+    <input type="text" id="role" placeholder="Role">
+
+    <select id="type">
+        <option>Internship</option>
+        <option>Job</option>
+    </select>
+
+    <input type="number" id="experience" placeholder="Experience (years)">
+    <input type="text" id="skills" placeholder="Skills (e.g. SQL, Python)">
+    <input type="text" id="location" placeholder="Location (e.g. Bangalore, Remote)">
+
+    <select id="status" onchange="toggleInterviewDate()">
+        <option>Applied</option>
+        <option>Interview</option>
+        <option>Rejected</option>
+        <option>Offer</option>
+    </select>
+
+    <label>Applied Date:</label>
+    <input type="date" id="appliedDate">
+
+    <div id="interviewDiv" style="display:none;">
+        <label>Interview Date:</label>
+        <input type="date" id="interviewDate">
+    </div>
+
+    <button onclick="addJob()">Add Job</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Type</th>
+            <th>Experience</th>
+            <th>Skills</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Applied</th>
+            <th>Interview</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="jobList"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
